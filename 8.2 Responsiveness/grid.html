@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards | CSS Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      color: #1d2b3a;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .first {
+      grid-column: 1 / -1;
+    }
+
+    .card {
+      display: grid;
+      min-height: 150px;
+      place-content: center;
+      padding: 1.5rem;
+      color: white;
+      background: #28527a;
+      border-radius: 1rem;
+    }
+
+    .card:first-child {
+      background: #18434b;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .first {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Grid</h1>
+  <p>The first card spans both columns; the layout becomes one column on narrow screens.</p>
+  <div class="grid-container">
+    <article class="first card">One wide feature</article>
+    <article class="card">Two</article>
+    <article class="card">Three</article>
+    <article class="card">Four</article>
+    <article class="card">Five</article>
+  </div>
+
+</body>
+
+</html>

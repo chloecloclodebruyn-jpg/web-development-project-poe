@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Device Breakpoints | Media Queries</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: clamp(1.25rem, 5vw, 4rem);
+      color: #173b37;
+      background-color: #f6f7f3;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p>Lesson 8.3</p>
+    <h1>One page, four device ranges</h1>
+    <p>Resize the browser to see the background change from mobile to tablet, laptop, and desktop breakpoints.</p>
+  </main>
+</body>
+
+</html>

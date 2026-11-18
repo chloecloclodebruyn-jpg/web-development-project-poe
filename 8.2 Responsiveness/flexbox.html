@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Cards | CSS Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      color: #1d2b3a;
+      font-family: Arial, sans-serif;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    .card {
+      display: grid;
+      min-width: 0;
+      min-height: 170px;
+      flex: 1;
+      place-content: center;
+      padding: 1.5rem;
+      color: white;
+      background: #315a82;
+      border-radius: 1rem;
+    }
+
+    .first {
+      flex: 2;
+    }
+
+    .second {
+      flex: 0.5;
+      background: #73549a;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 1rem;
+      }
+
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .card {
+        min-height: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Flexbox</h1>
+  <p>Flex values share the row differently; on a narrow screen the cards stack.</p>
+  <div class="flex-container">
+    <article class="first card">Flexible item: 2</article>
+    <article class="second card">Flexible item: 0.5</article>
+    <article class="card">Flexible item: 1</article>
+    <article class="card">Flexible item: 1</article>
+  </div>
+
+
+</body>
+
+</html>

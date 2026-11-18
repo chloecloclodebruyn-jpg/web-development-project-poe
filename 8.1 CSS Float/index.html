@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Float | Cat and Dog Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      color: #24312e;
+      font-family: Arial, sans-serif;
+    }
+
+    div {
+      display: block;
+      width: 48%;
+      padding: 1.25rem;
+      border-radius: 1rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    .cat {
+      float: left;
+      background-color: #d7f0e5;
+    }
+
+    .dog {
+      float: right;
+      background-color: #f8dfcf;
+    }
+
+    img {
+      float: left;
+      width: 40%;
+      max-width: 190px;
+      height: auto;
+      margin: 0 1rem 0.75rem 0;
+      border-radius: 0.75rem;
+    }
+
+    footer {
+      clear: both;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      background-color: #4a3d68;
+      border-radius: 0.75rem;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 1rem;
+      }
+
+      .cat,
+      .dog {
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cat">
+    <h2>A Cat's Quiet Day</h2>
+    <img src="../assets/cat.svg" alt="Original illustration of a calm cat">
+    <p class="first-paragraph">When morning light reaches the window, the cat finds a warm place to watch the garden.
+      A short game with a paper ball is followed by a stretch, a careful wash, and a long nap in the sun. By evening,
+      the favorite chair is waiting again.</p>
+  </div>
+  <div class="dog">
+    <h2>A Dog's Big Adventure</h2>
+    <img src="../assets/puppy.svg" alt="Original illustration of a friendly dog">
+    <p class="second-paragraph">The day begins with a walk around the neighborhood. There are new scents to discover,
+      a stick to carry home, and a ball to chase across the lawn. After a drink of water and a little rest, this
+      enthusiastic explorer is ready to go again.</p>
+  </div>
+
+  <footer>Float the cards and images; clear both columns before the footer.</footer>
+</body>
+
+</html>

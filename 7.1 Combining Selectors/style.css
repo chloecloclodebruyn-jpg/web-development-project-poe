@@ -1,0 +1,26 @@
+/* Group related headings with one rule. */
+h1,
+h2 {
+  color: rebeccapurple;
+}
+
+/* Match only paragraphs that are direct children of .box. */
+.box > p {
+  color: firebrick;
+}
+
+/* Match list items anywhere inside .box. */
+.box li {
+  color: royalblue;
+}
+
+/* Combine an element and class selector. */
+li.done {
+  color: forestgreen;
+}
+
+/* Combine an element, descendant, and class selector. */
+ul p.done {
+  font-size: 0.75rem;
+  font-style: italic;
+}

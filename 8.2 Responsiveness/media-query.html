@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Square | Media Query</title>
+  <style>
+    body {
+      color: #262347;
+      font-family: Arial, sans-serif;
+    }
+
+    .square {
+      background-color: rebeccapurple;
+      height: 500px;
+      width: 500px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .square {
+        height: 200px;
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Resize to see the breakpoint</h1>
+  <p>The square is 500px wide on larger screens and 200px wide at 600px or below.</p>
+  <div class="square" role="img" aria-label="A purple square that changes size at the 600 pixel breakpoint"></div>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+:root {
+  color-scheme: light;
+  --ink: #1e2c32;
+  --muted: #526267;
+  --accent: #145d59;
+  --paper: #f5f3ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.main {
+  width: min(1100px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 2rem 0 0;
+}
+
+.logo {
+  display: inline-block;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.eyebrow,
+.service-number {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 4rem 0 1rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: 1.25rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.creative {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.intro {
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.services {
+  padding: 2rem 0 1rem;
+}
+
+.card {
+  width: calc(50% - 1rem);
+  min-height: 320px;
+  margin: 1rem 0 2rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #dce1dc;
+  border-radius: 1.25rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.tile-image {
+  float: left;
+  width: min(42%, 190px);
+  aspect-ratio: 1;
+  margin: 0 1.25rem 1rem 0;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+
+.service-number {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.card-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.card p:last-child {
+  color: var(--muted);
+}
+
+.approach {
+  clear: both;
+  padding: 3rem 0 4rem;
+  border-top: 1px solid #ccd4ce;
+}
+
+.approach .eyebrow {
+  margin: 0 0 0.75rem;
+}
+
+.approach h2 {
+  max-width: 36rem;
+  margin-bottom: 0.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.approach p:last-child {
+  max-width: 38rem;
+  color: var(--muted);
+}
+
+footer {
+  clear: both;
+  padding: 1.25rem max(1.5rem, calc((100% - 1100px) / 2));
+  color: white;
+  background: var(--ink);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span {
+  color: #a6d0bb;
+}
+
+@media (max-width: 700px) {
+  .main {
+    width: calc(100% - 2rem);
+    padding-top: 1.25rem;
+  }
+
+  .eyebrow {
+    margin-top: 3rem;
+  }
+
+  .card {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    margin: 1rem 0;
+  }
+
+  .tile-image {
+    width: min(38%, 160px);
+    margin-right: 1rem;
+  }
+
+  .approach {
+    padding: 2rem 0 3rem;
+  }
+}

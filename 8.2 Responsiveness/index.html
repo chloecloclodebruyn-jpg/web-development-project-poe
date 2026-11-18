@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Layout Methods</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: clamp(1.25rem, 5vw, 4rem);
+      color: #202b38;
+      background: #f3f6fa;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 62rem;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: #4b657e;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .method-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .method-list a {
+      display: block;
+      height: 100%;
+      padding: 1.5rem;
+      color: inherit;
+      background: white;
+      border: 1px solid #d6e0ea;
+      border-radius: 1rem;
+      text-decoration: none;
+    }
+
+    .method-list a:hover,
+    .method-list a:focus-visible {
+      border-color: #3e6e9a;
+      outline: 2px solid #3e6e9a;
+      outline-offset: 2px;
+    }
+
+    .method-list strong,
+    .method-list span {
+      display: block;
+    }
+
+    .method-list span {
+      margin-top: 0.5rem;
+      color: #526170;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Lesson 8.2</p>
+    <h1>Four ways to build responsive layouts</h1>
+    <p>Explore how CSS and a framework help pages adapt to different screen sizes.</p>
+    <nav aria-label="Responsive layout examples">
+      <ul class="method-list">
+        <li><a href="./media-query.html"><strong>Media queries</strong><span>Change styles at a viewport breakpoint.</span></a></li>
+        <li><a href="./grid.html"><strong>CSS Grid</strong><span>Arrange content in a responsive two-dimensional layout.</span></a></li>
+        <li><a href="./flexbox.html"><strong>CSS Flexbox</strong><span>Distribute flexible items across a row or column.</span></a></li>
+        <li><a href="./bootstrap.html"><strong>Bootstrap</strong><span>Use a framework's responsive grid utilities.</span></a></li>
+      </ul>
+    </nav>
+  </main>
+</body>
+
+</html>
