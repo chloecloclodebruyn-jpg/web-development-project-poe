@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox | Flexible Columns</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px;
+        color: #17211d;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        align-items: stretch;
+        gap: 16px;
+      }
+
+      .container > * {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 20px;
+        background: darkseagreen;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <p>Each column shares the available space. Resize the page to see the layout stack on a small screen.</p>
+    <main class="container">
+      <section>
+        <h2>One</h2>
+        <p>Flexbox arranges items in a row or column and distributes available space between them.</p>
+      </section>
+      <section>
+        <h2>Two</h2>
+        <p>The gap adds consistent space between columns without extra margins on each item.</p>
+      </section>
+      <section>
+        <h2>Three</h2>
+        <p>Flexible items grow to share the row, then stack vertically at a narrower viewport.</p>
+      </section>
+    </main>
+  </body>
+</html>

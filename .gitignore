@@ -1,0 +1,13 @@
+.DS_Store
+Window.log
+*.zip
+*.pdf
+*.dmg
+*.png
+*.jpg
+*.jpeg
+*.gif
+**/solution/
+**/Solution/
+**/solution*.html
+**/solution*.css

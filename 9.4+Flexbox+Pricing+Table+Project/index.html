@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Flexbox comparison of GitHub, GitHub Copilot, and Poe free plans.">
+    <title>Flexbox | GitHub, Copilot &amp; Poe</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17211d;
+        --muted: #64716b;
+        --paper: #f5f6f1;
+        --card: #fff;
+        --line: #e0e5dc;
+        --accent: #c4f06a;
+        font-family: Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+      }
+
+      .page-header {
+        padding: 72px 24px 48px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 14px 0;
+        font-size: clamp(2.4rem, 7vw, 4.5rem);
+        letter-spacing: -0.06em;
+      }
+
+      .intro {
+        max-width: 600px;
+        margin: 0 auto;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .pricing-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 24px 48px;
+      }
+
+      .pricing-plan {
+        display: flex;
+        flex: 1 1 280px;
+        flex-direction: column;
+        max-width: 340px;
+        min-width: 0;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--card);
+      }
+
+      .pricing-plan.featured {
+        border-color: var(--ink);
+        box-shadow: 0 12px 32px rgb(23 33 29 / 9%);
+      }
+
+      .plan-label {
+        align-self: flex-start;
+        margin-bottom: 20px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--paper);
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      .plan-title {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+
+      .plan-description {
+        min-height: 48px;
+        margin: 8px 0 22px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .plan-price {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+      }
+
+      .plan-price span {
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      .plan-features {
+        display: grid;
+        gap: 12px;
+        margin: 0 0 28px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .plan-features li {
+        display: flex;
+        gap: 10px;
+        line-height: 1.5;
+      }
+
+      .plan-features li::before {
+        content: "✓";
+        color: #3c741e;
+        font-weight: 700;
+      }
+
+      .plan-button {
+        display: block;
+        margin-top: auto;
+        padding: 12px 16px;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        background: var(--ink);
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .plan-button:hover,
+      .plan-button:focus-visible {
+        background: #34443c;
+      }
+
+      .pricing-plan.featured .plan-button {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: var(--ink);
+      }
+
+      .pricing-plan.featured .plan-button:hover,
+      .pricing-plan.featured .plan-button:focus-visible {
+        background: #d3ff83;
+      }
+
+      .pricing-notes {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+
+      .pricing-notes p {
+        margin: 0 0 8px;
+      }
+
+      .pricing-notes a {
+        color: var(--ink);
+      }
+
+      @media (max-width: 650px) {
+        .page-header {
+          padding-top: 52px;
+        }
+
+        .pricing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-plan {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <p class="eyebrow">Flexbox pricing table</p>
+      <h1>Pick your toolkit.</h1>
+      <p class="intro">A quick look at the free starting plans for GitHub, GitHub Copilot, and Poe. Three different tools, compared side by side.</p>
+    </header>
+
+    <main class="pricing-container" aria-label="Free plan comparison">
+      <article class="pricing-plan">
+        <p class="plan-label">Code hosting</p>
+        <h2 class="plan-title">GitHub Free</h2>
+        <p class="plan-description">Store projects, collaborate, and manage your code.</p>
+        <p class="plan-price">$0 <span>/ month</span></p>
+        <ul class="plan-features">
+          <li>Unlimited public and private repositories</li>
+          <li>Issues and Projects</li>
+          <li>2,000 CI/CD minutes per month</li>
+        </ul>
+        <a class="plan-button" href="https://github.com/pricing" target="_blank" rel="noopener noreferrer">Explore GitHub plans</a>
+      </article>
+
+      <article class="pricing-plan featured">
+        <p class="plan-label">AI coding assistant</p>
+        <h2 class="plan-title">GitHub Copilot Free</h2>
+        <p class="plan-description">Try AI assistance while you write and explore code.</p>
+        <p class="plan-price">$0 <span>/ month</span></p>
+        <ul class="plan-features">
+          <li>Up to 2,000 code completions per month</li>
+          <li>Limited chat and agent usage</li>
+          <li>Available in supported editors</li>
+        </ul>
+        <a class="plan-button" href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Explore Copilot plans</a>
+      </article>
+
+      <article class="pricing-plan">
+        <p class="plan-label">AI assistant platform</p>
+        <h2 class="plan-title">Poe Free</h2>
+        <p class="plan-description">Try a range of AI bots with daily points.</p>
+        <p class="plan-price">$0 <span>/ free access</span></p>
+        <ul class="plan-features">
+          <li>Daily points for non-paying users</li>
+          <li>Explore bots for text, images, audio, and more</li>
+          <li>Points reset daily and do not roll over</li>
+        </ul>
+        <a class="plan-button" href="https://poe.com/" target="_blank" rel="noopener noreferrer">Explore Poe</a>
+      </article>
+    </main>
+
+    <footer class="pricing-notes">
+      <p>Prices and plan limits can change. Poe's free access uses daily points; paid subscriptions and prices may differ by platform and region.</p>
+      <p>Details checked November 18, 2026. See the <a href="https://github.com/pricing" target="_blank" rel="noopener noreferrer">GitHub pricing page</a>, <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Copilot plans</a>, and <a href="https://help.poe.com/hc/en-us/articles/19944206309524" target="_blank" rel="noopener noreferrer">Poe FAQs</a> for current details.</p>
+    </footer>
+  </body>
+</html>

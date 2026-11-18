@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox | Page Layout Methods</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px;
+        color: #17211d;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px 24px;
+        padding: 18px;
+        background: gold;
+      }
+
+      .container p {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .container ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Page layout methods</h1>
+    <nav class="container" aria-label="Layout method examples">
+      <p>Explore a layout method:</p>
+      <ul>
+        <li><a href="./html-table.html">HTML Table</a></li>
+        <li><a href="./inline-block.html">Inline-Block</a></li>
+        <li><a href="./absolute-position.html">Absolute Positioning</a></li>
+        <li><a href="./float.html">Float</a></li>
+        <li><a href="./flex.html" aria-current="page">Flexbox</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
