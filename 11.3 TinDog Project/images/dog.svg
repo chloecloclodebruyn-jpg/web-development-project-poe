@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 480" role="img" aria-labelledby="title description">
+  <title id="title">A happy golden dog</title>
+  <desc id="description">A friendly golden dog sits wearing a red collar and a small heart tag.</desc>
+  <circle cx="210" cy="240" r="202" fill="#ffe1d8"/>
+  <ellipse cx="210" cy="410" rx="125" ry="25" fill="#e6aaa0"/>
+  <path d="M105 151c-50-57-79-27-64 63 8 49 37 75 82 48m192-111c50-57 79-27 64 63-8 49-37 75-82 48" fill="#b97143"/>
+  <path d="M112 319c0-67 41-112 98-112s98 45 98 112v72H112Z" fill="#d9955d"/>
+  <path d="M133 296c18-29 42-43 77-43s59 14 77 43v91H133Z" fill="#e6aa6d"/>
+  <ellipse cx="210" cy="179" rx="112" ry="112" fill="#e6aa6d"/>
+  <path d="M103 131c14-52 60-80 107-80s93 28 107 80c-28-15-62-23-107-23s-79 8-107 23Z" fill="#d9955d"/>
+  <ellipse cx="168" cy="178" rx="10" ry="13" fill="#352a2a"/>
+  <ellipse cx="252" cy="178" rx="10" ry="13" fill="#352a2a"/>
+  <ellipse cx="210" cy="214" rx="38" ry="28" fill="#fff2df"/>
+  <ellipse cx="210" cy="203" rx="13" ry="10" fill="#352a2a"/>
+  <path d="M210 213c0 12-10 19-22 19m22-19c0 12 10 19 22 19" fill="none" stroke="#70453b" stroke-linecap="round" stroke-width="5"/>
+  <path d="M118 272c28 17 58 26 92 26s64-9 92-26l9 23c-30 23-63 35-101 35s-71-12-101-35Z" fill="#e85267"/>
+  <path d="m210 327 17 19-17 27-17-27Z" fill="#ffd166" stroke="#fff3d4" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M183 393h-47m148 0h-47" stroke="#b97143" stroke-linecap="round" stroke-width="16"/>
+  <path d="M130 131c20-11 38-17 57-19m103 19c-20-11-38-17-57-19" fill="none" stroke="#f4c58e" stroke-linecap="round" stroke-width="7" opacity=".8"/>
+</svg>

@@ -1,0 +1,79 @@
+.gradient-background {
+  color: #fff;
+  background: linear-gradient(125deg, #ff4c68 0%, #ef8172 52%, #ffb79b 100%);
+}
+
+.brand-name {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+}
+
+.brand-name span {
+  color: #421c29;
+}
+
+#title .nav-link {
+  color: rgb(255 255 255 / 90%);
+  font-weight: 600;
+}
+
+#title .nav-link:hover,
+#title .nav-link:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.hero-dog {
+  width: min(100%, 370px);
+  filter: drop-shadow(0 1.25rem 1rem rgb(82 25 37 / 18%));
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: #b84254;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: #fff0ee;
+  color: #c33b53;
+  font-weight: 800;
+}
+
+.feature-card {
+  border: 1px solid #f1e4e2;
+  border-radius: 1rem;
+}
+
+.testimonial-section {
+  background: #fff7f5;
+}
+
+.testimonial-section blockquote {
+  max-width: 48rem;
+}
+
+.profile-img {
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

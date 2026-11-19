@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title description">
+  <title id="title">Moving van on the way to a new home</title>
+  <desc id="description">A blue moving van with boxes drives along a sunny road toward a small house.</desc>
+  <rect width="720" height="480" rx="28" fill="#eaf4f5"/>
+  <circle cx="578" cy="97" r="45" fill="#f4c96b"/>
+  <path d="M0 336c122-35 223-18 352 12s249 31 368-4v136H0Z" fill="#c8e3d3"/>
+  <path d="M0 390h720v90H0Z" fill="#768f85"/>
+  <path d="M456 223v-54l61-55 62 55v54h-35v-43h-53v43Z" fill="#f7faf4" stroke="#688679" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M489 223v-48h56v48" fill="#d9e8e2"/>
+  <path d="M113 212h294c18 0 32 14 32 32v93H82V243c0-17 14-31 31-31Z" fill="#4a8f9b"/>
+  <path d="M439 260h76l43 46v31H439Z" fill="#e58b71"/>
+  <path d="M461 275h43v27h-43Z" fill="#d9eff0"/>
+  <path d="m513 276 31 0 24 26h-55Z" fill="#d9eff0"/>
+  <path d="M104 237h100v69H104Z" fill="#d9eff0"/>
+  <path d="M220 237h95v69h-95Z" fill="#d9eff0"/>
+  <path d="M163 161h61v51h-61zM232 178h56v34h-56zM296 153h75v59h-75z" fill="#e9b875"/>
+  <path d="M163 178h61m-30-17v51m38-18h56m-29-16v34m66-33h75m-38-26v59" fill="none" stroke="#c28c4e" stroke-width="4"/>
+  <path d="M84 323h480" stroke="#f6f1d8" stroke-linecap="round" stroke-width="7" stroke-dasharray="31 25"/>
+  <circle cx="164" cy="337" r="31" fill="#293d42"/>
+  <circle cx="164" cy="337" r="13" fill="#dce5dc"/>
+  <circle cx="489" cy="337" r="31" fill="#293d42"/>
+  <circle cx="489" cy="337" r="13" fill="#dce5dc"/>
+  <path d="M73 379c45-15 76-15 121 0m260 0c45-15 76-15 121 0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7" opacity=".7"/>
+</svg>

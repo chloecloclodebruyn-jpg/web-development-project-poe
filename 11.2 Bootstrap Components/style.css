@@ -1,0 +1,32 @@
+.py-lg-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.service-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background: #0d6efd;
+}
+
+.row > .col-md-4:nth-child(2) .service-icon {
+  background: #eaf3ff;
+}
+
+.row > .col-md-4:nth-child(3) .service-icon {
+  background: #d63384;
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar > div {
+    width: 100%;
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+}

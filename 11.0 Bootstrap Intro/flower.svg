@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title description">
+  <title id="title">Flowers in a garden</title>
+  <desc id="description">A simple illustration of pink and yellow flowers in a sunny garden.</desc>
+  <rect width="720" height="480" fill="#dff3ea"/>
+  <circle cx="590" cy="94" r="52" fill="#ffd66b"/>
+  <path d="M0 340c116-57 218-29 327 8s243 52 393-21v153H0Z" fill="#8fc99e"/>
+  <path d="M0 390c170-55 285 20 430 13s199-40 290-16v93H0Z" fill="#5b9e75"/>
+  <g fill="#39835f">
+    <path d="M237 366h12V204h-12zM474 378h12V174h-12zM354 379h12V260h-12z"/>
+  </g>
+  <g fill="#f3a5a9">
+    <circle cx="243" cy="190" r="22"/><circle cx="219" cy="166" r="22"/><circle cx="243" cy="142" r="22"/><circle cx="267" cy="166" r="22"/>
+    <circle cx="480" cy="160" r="22"/><circle cx="456" cy="136" r="22"/><circle cx="480" cy="112" r="22"/><circle cx="504" cy="136" r="22"/>
+  </g>
+  <g fill="#f8c94d">
+    <circle cx="243" cy="166" r="12"/><circle cx="480" cy="136" r="12"/><circle cx="360" cy="250" r="19"/>
+  </g>
+  <g fill="#f4c9a3">
+    <circle cx="360" cy="228" r="18"/><circle cx="338" cy="250" r="18"/><circle cx="360" cy="272" r="18"/><circle cx="382" cy="250" r="18"/>
+  </g>
+  <circle cx="360" cy="250" r="10" fill="#f8c94d"/>
+  <path d="M242 286c-37-29-58 5-12 33m252-39c38-30 60 4 14 33m-125 21c-29-31-54-6-24 19" fill="none" stroke="#39835f" stroke-linecap="round" stroke-width="10"/>
+</svg>
